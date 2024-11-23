@@ -12,7 +12,16 @@ def leaders(arr):
     return result
 
 
-arr = [16, 17, 4, 3, 5, 2]
+arr = [16, 17, 4, 3, 2]
 
 result = leaders(arr)
 print(" ".join(map(str, result)))
+
+# comparison of 4 with [3, 2]
+# Key Observations
+# For arr = [16, 17, 4, 3, 2], the process for 4 is:
+#
+# Compare 4 with 3: No break.
+# Compare 4 with 2: No break.
+# The inner loop completes fully without a break.
+# The else block executes, and 4 is added to the result list.
