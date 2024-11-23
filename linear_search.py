@@ -9,8 +9,8 @@ def linear_search(arr,target):
         if arr[index] == target:
             #print(steps)
             return index
-    else:
-        return -1
+
+    return -1
     
         
 arr = [1,2,4,7,9]
