@@ -22,7 +22,7 @@ def second_largest(arr):
             return arr[i]
     return -1
 
-arr = [12,12,12]
+arr = [12,37,14,48,23]
 
 result = second_largest(arr)
 print(result)
