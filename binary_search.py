@@ -2,7 +2,7 @@
 
 def binary_search(arr,target):
     
-    mid = 0
+
     low = 0
     high = len(arr)-1
     #step = 0
