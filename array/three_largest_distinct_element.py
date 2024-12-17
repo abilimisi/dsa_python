@@ -14,7 +14,7 @@
 # print(result[::-1])
 
 
-def three_distinct_elements(arr):
+def three_largest_distinct_elements(arr):
     arr_size = len(arr)
     if arr_size < 3:
         print("invalid input")
@@ -39,4 +39,4 @@ def three_distinct_elements(arr):
 
 
 arr = [12, 13, 1, 10, 34, 11, 34]
-three_distinct_elements(arr)
+three_largest_distinct_elements(arr)

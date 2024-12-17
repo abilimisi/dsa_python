@@ -1,6 +1,6 @@
 def sorted_array(sorted_arr):
-    for i in range(1, len(sorted_arr)):
-        if sorted_arr[i - 1] > sorted_arr[i]:
+    for i in range(len(sorted_arr)-1):
+        if sorted_arr[i] > sorted_arr[i+1]:
             return False
     else:
         return True
