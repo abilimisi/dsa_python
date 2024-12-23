@@ -1,3 +1,5 @@
+# Time Complexity: O(n2) ,as there are two nested loops
+#space: O(1)
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
