@@ -10,6 +10,7 @@ def selection_sort(arr):
                 min_val = j
 
         arr[i], arr[min_val] = arr[min_val], arr[i]
+        print(arr)
 
 
 arr = [64, 25, 12, 22, 11]
