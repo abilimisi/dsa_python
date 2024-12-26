@@ -1,24 +1,49 @@
 # time complexity 0(n)
-# space complaxity 0(n)
+# space complexity 0(n)
 
-#first one is recommended
-def remove_duplicates(elements):
+"""def remove_duplicates(elements):
     seen = set()
     idx = 0
 
-    for num in elements:
-        if num not in seen:
-            seen.add(num)
-            idx+=1
-    return seen,idx
+    for num in range(len(elements)):
+        if arr[num] not in seen:
+            seen.add(arr[num])
+            arr[idx] = arr[num]
+            idx += 1
+    return idx
 
 
 arr = [1, 3, 3, 4, 5, 7, 7]
 res = remove_duplicates(arr)
-print(res)
+for i in range(res):
+    print(arr[i], end=" ")"""
+
+
+# ----------------------------------------------------------------
 
 # time complexity 0(n)
-# space complaxity 0(1)
+# space complexity 0(1)
+# recommended one
+def rem_dup(arr):
+    idx = 1  # start from 1
+
+    for i in range(1, len(arr)):
+        if arr[i] != arr[i - 1]:
+            arr[idx] = arr[i]
+            idx += 1
+    return idx
+
+
+arr = [1, 3, 3, 4, 5, 7, 7]
+res = rem_dup(arr)
+for i in range(res):
+    print(arr[i], end=" ")  # OR
+# print(arr[:res])
+
+# -------------------------------------------------------
+
+# time complexity 0(n)
+# space complexity 0(1)
 
 # arr1 = [1, 3, 3, 4, 5, 7, 7,3]
 # for i in arr1:
