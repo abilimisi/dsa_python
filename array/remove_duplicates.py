@@ -25,7 +25,7 @@ for i in range(res):
 # space complexity 0(1)
 # recommended one
 def rem_dup(arr):
-    idx = 1  # start from 1
+    idx = 1  # start from 1 bcz we consider first element should be unique
 
     for i in range(1, len(arr)):
         if arr[i] != arr[i - 1]:
