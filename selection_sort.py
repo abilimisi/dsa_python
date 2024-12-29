@@ -1,5 +1,5 @@
 # Time Complexity: O(n2) ,as there are two nested loops
-#space: O(1)
+# space: O(1)
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -8,7 +8,7 @@ def selection_sort(arr):
 
         for j in range(i + 1, n):
 
-            if arr[j] < arr[min_val]:
+            if arr[j] < arr[min_val]:  # first checking min val in arr
                 min_val = j
 
         arr[i], arr[min_val] = arr[min_val], arr[i]
