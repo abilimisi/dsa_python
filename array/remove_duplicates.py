@@ -24,6 +24,7 @@ for i in range(res):
 # time complexity 0(n)
 # space complexity 0(1)
 # recommended one
+# below ex works only on sorted array
 def rem_dup(arr):
     idx = 1  # start from 1 bcz we consider first element should be unique
 
