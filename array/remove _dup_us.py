@@ -1,3 +1,5 @@
+# Time comp = O(n2)
+# space comp = 0(n)
 def rem_dup_un_sorted(arr):
     res = []
     for i in range(len(arr)):
