@@ -1,16 +1,20 @@
-def dup_in_k_dist(element, k):
+def check_duplicates_within_k(arr, k):
+    n = len(arr)
 
-    for i in range(len(element) - k):
-        if element[i] == element[i + k]:
-            return True
-        else:
-            False
+    # Traverse for every element
+    for i in range(n):
+
+        # Traverse next k elements
+        for c in range(1, k + 1):
+            j = i + c
+
+            # If we find one more occurrence within k
+            if j < n and arr[i] == arr[j]:
+                return True
+
+    return False
 
 
-arr = [1, 2, 3, 1, 4, 5]
-k = 3
-res = dup_in_k_dist(arr, k)
-if res:
-    print(True)
-else:
-    print(False)
+# Driver method to test above method
+arr = [1, 2, 3, 4, 4]
+print("Yes" if check_duplicates_within_k(arr, 3) else "No")
