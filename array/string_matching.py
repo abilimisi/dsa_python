@@ -5,7 +5,7 @@ def string_match(str, word):
     return -1
 
 str = "Hello World"
-word = "Hello"
+word = " World"
 res = string_match(str, word)
 if res == 1:
     print("Found")
