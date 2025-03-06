@@ -1,15 +1,14 @@
-def stock_buy_sell(arr):
-    minimal = arr[0]
-    for i in range(len(arr)-1):
-        if arr[i+1] > arr[i]:
-            maximal = arr[i+1]
+def maximumProfit(prices):
+    profit = 0
+    for i in range(1, len(prices)):
+        if prices[i] > prices[i - 1]:
+            profit += prices[i] - prices[i - 1]
+            print(profit)
+    return profit
 
-        else:
-            maximal = arr[i]
-            break
 
-    print(maximal-minimal)
+prices = [100, 180, 260, 310, 40, 535, 695]
+print(maximumProfit(prices))
 
-# arr = [100, 180, 260, 310, 40, 535, 695]
-arr = [4, 2, 2, 2, 4]
-stock_buy_sell(arr)
+# 310 - 100 = 210
+# 695 - 100 = 595
