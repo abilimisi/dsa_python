@@ -1,12 +1,22 @@
-def missing_repeating(arr):
-    for i in range(1, len(arr)):
-        if i not in arr:
-            print(i)
 
-    for i in range(len(arr) + 1):
-        if arr.count(i) > 1:
-            print(i)
+def findTwoElement(arr):
+    n = len(arr)
+    freq = [0] * (n + 1)
+    repeating = -1
+    missing = -1
 
+    for i in range(n):
+        freq[arr[i]] += 1
 
-arr = [1,2,4,5,5]
-missing_repeating(arr)
+    for j in range(1,n+1):
+        if freq[j] == 0:
+            missing = j
+
+        elif freq[j] == 2:
+            repeating = j
+
+    return [repeating, missing]
+
+arr = [3, 1, 3]
+ans = findTwoElement(arr)
+print(ans)
