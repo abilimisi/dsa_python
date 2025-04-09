@@ -34,11 +34,10 @@ def rem_dup(arr):
             idx += 1
     return idx
 
-
 arr = [1, 3, 3, 4, 5, 7, 7]
 res = rem_dup(arr)
 for i in range(res):
-    print(arr[i], end=" ")  # OR
+    print(arr[i], end=" ")
 # print(arr[:res])
 
 # -------------------------------------------------------
