@@ -1,11 +1,9 @@
-
+#here both are different problems
 def count_unique_and_duplicates(nums):
     hash_table = [0] * 101
 
     for num in nums:
         hash_table[num] += 1
-
-
     unique_count = 0
     duplicate_count = 0
 
@@ -20,10 +18,10 @@ def count_unique_and_duplicates(nums):
     print(unique_count, duplicate_count)
     print(hash_table)
 
-nums = [1,4,5,4,6,7,4]
+nums = [1,4,5,4,6,7]
 count_unique_and_duplicates(nums)
 
-
+#----------------------------------------------------------------
 def counts_unique_and_duplicates(arr):
     dict_counting = {}
     unique_count = 0
@@ -39,7 +37,7 @@ def counts_unique_and_duplicates(arr):
             unique_count+=1
         else:
             dup_count+=1
-    print(dict_counting)
+    print("unique :",unique_count,"duplicate :",dup_count)
 
-arr = [1,2,3,4,1,3]
+arr = [2,7,9,10,2,7,12,17,7]
 counts_unique_and_duplicates(arr)
