@@ -7,7 +7,7 @@ def count_unique_and_duplicates(nums):
     unique_counts = 0
     duplicate_count = 0
 
-    for freq in hash_table[1:]: #here we are ignoring 0,l bcz we are taking array starting with 1 in input
+    for freq in hash_table[1:]: #here we are ignoring 0,bcz we are taking array starting with 1 in input
         if freq == 1:
             unique_counts += 1
 
