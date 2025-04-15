@@ -39,6 +39,3 @@ array = [3, 7, 11, 2, 1, 10]
 position = 3
 value = 9
 insert_at_position_2(array, position, value)
-
-
-# method_2
