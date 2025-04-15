@@ -24,3 +24,21 @@ arr = [3, 7, 11, 2, 1, 10]
 pos = 3
 val = 9
 insert_at_position(arr, pos, val)
+
+
+# method_2
+def insert_at_position_2(array, position, value):
+    array.append(0)
+    n = len(array)-1
+    for i in range(n,position,-1):
+        array[i] = array[i-1]
+    array[position] = value
+    print(array)
+
+array = [3, 7, 11, 2, 1, 10]
+position = 3
+value = 9
+insert_at_position_2(array, position, value)
+
+
+# method_2
